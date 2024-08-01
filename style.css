@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+h1 {
+    background-color: #081b31;
+    color: #fff;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    font-size: 4rem;
+    transition: all 0.2s ease-in-out;
+}
+
+.choice:hover {
+    font-size: 5rem;
+    transform: rotate(10deg);
+    opacity: 1;
+}
+
+.choice:hover, .choice:hover ~ .choice {
+    opacity: 1;
+}
+
+.choices:hover .choice:not(:hover) {
+    opacity: 0.6;
+}
+
+img {
+    height: 120px;
+    width: 120px;
+    object-fit: cover;
+    transition: all 0.2s ease-in-out;
+}
+
+#paper {
+    background-color: rgb(78, 137, 255);
+}
+#rock {
+    background-color: rgb(248, 99, 223);
+}
+#scissor {
+    background-color: rgb(157, 85, 251);
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+    gap: 1rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+}
+
+#user-score, #comp-score {
+    font-size: 4rem;
+    margin-top: 3rem;
+}
+
+.msg-container {
+    margin-top: 5rem;
+}
+
+#msg {
+    background-color: #081b31;
+    color: #fff;
+    font-size: 2rem;
+    display: inline;
+    padding: 5px 20px;
+    border-radius: 1rem;
+}
