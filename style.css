@@ -2,6 +2,8 @@
     margin: 0;
     padding: 0;
     text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
 }
 
 h1 {
@@ -11,7 +13,7 @@ h1 {
     line-height: 5rem;
 }
 
-.choice{
+.choice {
     width: 150px;
     height: 150px;
     display: flex;
@@ -30,7 +32,8 @@ h1 {
     opacity: 1;
 }
 
-.choice:hover, .choice:hover ~ .choice {
+.choice:hover,
+.choice:hover~.choice {
     opacity: 1;
 }
 
@@ -48,9 +51,11 @@ img {
 #paper {
     background-color: rgb(78, 137, 255);
 }
+
 #rock {
     background-color: rgb(248, 99, 223);
 }
+
 #scissor {
     background-color: rgb(157, 85, 251);
 }
@@ -71,8 +76,9 @@ img {
     gap: 5rem;
 }
 
-#user-score, #comp-score {
-    font-size: 4rem;
+#user-score,
+#comp-score {
+    font-size: 3rem;
     margin-top: 3rem;
 }
 
@@ -83,8 +89,53 @@ img {
 #msg {
     background-color: #081b31;
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.5rem;
     display: inline;
     padding: 5px 20px;
     border-radius: 1rem;
 }
+
+footer {
+    position: absolute;
+    /* border: 2px solid black; */
+    bottom: 10px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 200px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #004c7e;
+    /* border: 2px solid black; */
+    display: block;
+}
+
+@media screen and (max-width: 600px) {
+    .choice {
+        width: 100px;
+        height: 100px;
+        font-size: 3rem;
+    }
+    h1{
+        height: 3rem;
+        line-height: 3rem;
+        font-size: 1rem;
+    }
+    .score-board {
+        font-size: 1rem;
+    }
+    .choice:hover {
+        font-size: 3.5rem;
+    }
+    #user-score,
+#comp-score {
+    font-size: 2rem;
+}
+#msg{
+    font-size: 1rem;
+}
+  }
